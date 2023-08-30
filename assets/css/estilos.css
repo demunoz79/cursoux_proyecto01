@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color_principal: #2c72bc;
+    --color_principal_claro: #6a97c8;
+    --color_principal_oscuro: #1d5487;
+}
+
+.header_principal {
+    background-color: var(--color_principal);
+    color:whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+/* .header_principal article img {
+} lo puedo usar para el tema del tamaño de la imagen tbm*/ 
+
+.logo_header { 
+    width: 5em;
+} /* esto es una clase */
+
+.buscador_header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 2px 8px 2px 2px;
+}
+
+.buscador_header input {
+    padding: 10px;
+    height: 40px;
+    border: none; 
+    border-radius: 5px 0 0 5px;
+    width: 25vw;
+    min-width: 250px;
+}
+
+.buscador_header svg {
+   background-color: var(--color_principal_oscuro);
+   height: 40px;
+   width: 50px;
+   padding:12px;
+   border-radius: 0 5px 5px 0;
+   transition: background-color .3s ease-out;
+}
+
+.buscador_header svg:hover{
+    background-color: var(--color_principal_claro);
+}
+
+.carro_header{
+    background-color: var(--color_principal_oscuro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    /* padding: 10px; */
+}
+
+.carro_header svg {
+    height: 20px;
+    width: 20px;
+    transition: all .3 ease-out;
+}
+
+.carro_header:hover{
+    background-color: var(--color_principal_claro)
+}
+
+.carro_header:hover svg{ 
+    transform: rotate(-10deg);
+}
+/* aqui hicimos un llamado de na clase con hover sobre svg */
+
+.carro_header p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header_secundario {
+    background-color: var(--color_principal_claro);
+    padding: 20px;
+}
+
+.header_secundario nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.header_secundario nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.header_secundario nav a:hover{
+    color: var(--color_principal);
+}
